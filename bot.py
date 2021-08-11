@@ -1,6 +1,8 @@
+import os
 import qrcode
 
 from telegram.ext import Updater, CommandHandler, ConversationHandler, MessageHandler, Filters
+from telegram import ChatAction
 
 INPUT_TEXT = 0
 
@@ -23,6 +25,20 @@ def generate_qr(text):
 
     return filename
 
+def send_qr(filename, chat):
+
+    chat.send_action(
+        action=ChatAction.UPLOAD_PHOTO,
+        timeout=None
+    )
+
+    chat.send_photo(
+        photo=open(filename, 'rb')
+    )
+
+    os.unlink(filename)
+
+
 
 def input_text(update, context):
 
@@ -31,8 +47,12 @@ def input_text(update, context):
     filename = generate_qr(text)
 
     print(filename)
+
+    chat = update.message.chat
+
+    print(chat)
     
-    #send_qr(filename)
+    send_qr(filename, chat)
 
     return ConversationHandler.END
 
