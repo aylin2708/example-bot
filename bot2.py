@@ -1,3 +1,4 @@
+import os
 from telegram.ext import Updater, CommandHandler
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -25,7 +26,7 @@ def start(update, context):
 
 if __name__ == '__main__':
 
-    updater = Updater(token='1949314508:AAGDpitaLVzXmNFMIeugNvELx9kDNzjHJeM', use_context=True)
+    updater = Updater(token=os.environ['TOKEN'], use_context=True)
 
     dp = updater.dispatcher
 
