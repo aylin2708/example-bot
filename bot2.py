@@ -12,10 +12,10 @@ def start(update, context):
     update.message.reply_text(
         text='¡HOLA!, ¿qué deseas hacer?\n\nUsa /qr para generar un código qr, o utiliza el botón "Generar qr"',
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton(text='Generar qr', callback_data='qr')],
-            [InlineKeyboardButton(text='Sobre el autor', url='https://www.instagram.com/aylinmari_')],
-            [InlineKeyboardButton(text='Twitter', url='https://twitter.com')],
-            [InlineKeyboardButton(text='Facebook', url='https://facebook.com')]
+            [InlineKeyboardButton(text='Generar qr ✅', callback_data='qr')],
+            [InlineKeyboardButton(text='Página del autor 👩‍⚕', url='https://www.instagram.com/aylinmari_')],
+            [InlineKeyboardButton(text='Twitter 📱', url='https://twitter.com')],
+            [InlineKeyboardButton(text='Facebook 📱', url='https://facebook.com')]
         ])
     )
 def qr_command_handler(update, context):
@@ -98,3 +98,5 @@ if __name__ == '__main__':
 
     updater.start_polling()
     updater.idle()
+
+    

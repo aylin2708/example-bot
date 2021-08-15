@@ -21,7 +21,7 @@ def qr_command_handler(update, context):
 
     return INPUT_URL
 
-def url_callback_handler    (update, context):
+def url_callback_handler(update, context):
 
     query = update.callback_query
     query.answer()
