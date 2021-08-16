@@ -18,7 +18,7 @@ def start(update, context):
             [InlineKeyboardButton(text='Página del autor 👩‍⚕', url='https://www.instagram.com/aylinmari_')],
             [InlineKeyboardButton(text='Twitter 📱', url='https://twitter.com')],
             [InlineKeyboardButton(text='Facebook 📱', url='https://facebook.com')],
-            [InlineKeyboardButton(text='Acortar URL', callback_data='url')]
+            [InlineKeyboardButton(text='Acortar URL 👩‍💻', callback_data='url')]
         ])
     )
 def qr_command_handler(update, context):
