@@ -5,7 +5,6 @@ from telegram import ChatAction, InlineKeyboardMarkup, InlineKeyboardButton
 import qrcode
 import pyshorteners
 
-
 INPUT_TEXT = 0
 INPUT_URL = 0
 
@@ -21,6 +20,7 @@ def start(update, context):
             [InlineKeyboardButton(text='Acortar URL 👩‍💻', callback_data='url')]
         ])
     )
+
 def qr_command_handler(update, context):
     
     update.message.reply_text('Envíe el texto para generar un código QR')
@@ -122,8 +122,6 @@ def input_url(update, context):
     
     return ConversationHandler.END
 
-
-    
 if __name__ == '__main__':
     updater = Updater(token='1949314508:AAGDpitaLVzXmNFMIeugNvELx9kDNzjHJeM', use_context=True)
     
@@ -144,6 +142,7 @@ if __name__ == '__main__':
         fallbacks=[]
     ))
 
+    #url
     
     dp = updater.dispatcher
 

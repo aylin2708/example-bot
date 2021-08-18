@@ -1,0 +1,91 @@
+{
+    "lang": {
+        "start" : {
+            "msg": {
+                "en": "Please select your language",
+                "es": "Por favor seleccionar un lenguage"
+            },
+            "choose": {
+                "en":"English 🇺🇸",
+                "es":"Español 🇪🇸"
+            },
+            "config": {
+                "en": "Languege is set to: English 🇺🇸",
+                "es": "El idioma esta configurado: Español 🇪🇸"
+            }
+        },
+        "landing": {
+            "msg": {
+                "en": "Please select a action",
+                "es": "Por favor seleccionar una accion"
+            },
+            "choose": {
+                "en": [
+                    {
+                        "slug": "osint",
+                        "option": "Tool OSINT",
+                        "status": true
+                    },
+                    {
+                        "slug": "cyber",
+                        "option": "Tool CyberSecurity",
+                        "status": false
+                    },
+                    {
+                        "slug": "group",
+                        "option": "Teams",
+                        "status": true
+                    },
+                    {
+                        "slug": "help",
+                        "option": "Help",
+                        "status": true
+                    }
+                ],
+                "es": [
+                    {
+                        "slug": "osint",
+                        "option": "Utilidades de OSINT", 
+                        "status":true 
+                    },
+                    {
+                        "slug": "cyber",
+                        "option": "Utilidades de CiberSeguridad",
+                        "status":false
+                    },
+                    {
+                        "slug": "group",
+                        "option": "Equipo",
+                        "status": true
+                    },
+                    {
+                        "slug": "help",
+                        "option": "Ayuda",
+                        "status":true 
+                    }
+                ]
+            }
+        },
+        "osint": {
+            "choose": {
+                "es":{},
+                "en":{}
+            }
+        },
+        "cyber": {
+            "choose": {
+                "es": {},
+                "en": {}
+            }
+        },
+        "group": {
+            "choose": {
+                "es": {},
+                "en": {}
+            }
+        },
+        "help": {
+
+        }
+    }
+}
